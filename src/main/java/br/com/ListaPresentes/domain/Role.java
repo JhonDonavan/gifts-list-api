@@ -1,4 +1,4 @@
-package br.com.ListaPresentes.model;
+package br.com.ListaPresentes.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

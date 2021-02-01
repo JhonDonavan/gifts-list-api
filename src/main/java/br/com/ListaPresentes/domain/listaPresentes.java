@@ -1,4 +1,4 @@
-package br.com.ListaPresentes.model;
+package br.com.ListaPresentes.domain;
 
 import java.util.Date;
 import java.util.List;

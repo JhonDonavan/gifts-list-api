@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.ListaPresentes.domain.Gift;
 import br.com.ListaPresentes.exceptions.GiftNotfoundException;
-import br.com.ListaPresentes.model.Gift;
 import br.com.ListaPresentes.repositories.GiftRepository;
 
 @Service

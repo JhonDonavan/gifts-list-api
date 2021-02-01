@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import br.com.ListaPresentes.model.User;
+import br.com.ListaPresentes.domain.User;
 
 public interface UserRepository extends MongoRepository<User, String> {
 

@@ -3,7 +3,7 @@ package br.com.ListaPresentes.services;
 import java.util.List;
 import java.util.Optional;
 
-import br.com.ListaPresentes.model.Gift;
+import br.com.ListaPresentes.domain.Gift;
 
 public interface GiftsService {
 	

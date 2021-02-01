@@ -1,4 +1,4 @@
-package br.com.ListaPresentes.model;
+package br.com.ListaPresentes.domain;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.FieldType;
@@ -16,14 +16,14 @@ public class Gift {
 	//private List<Convidado> convidado;
 	private String  nomeConvidado;
 	
-	
 	public Gift() {
-		
-	}
-	
-	public Gift(String id, String nome, int quantidade, Boolean qtdRecebida, String categoria, String nomeConvidado) {
 		super();
-		this._id = id;
+		// TODO Auto-generated constructor stub
+	}
+
+	public Gift(String _id, String nome, int quantidade, Boolean qtdRecebida, String categoria, String nomeConvidado) {
+		super();
+		this._id = _id;
 		this.nome = nome;
 		this.quantidade = quantidade;
 		this.qtdRecebida = qtdRecebida;
@@ -31,39 +31,28 @@ public class Gift {
 		this.nomeConvidado = nomeConvidado;
 	}
 
-
 	public String getNome() {
 		return nome;
 	}
-
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-
 	public int getQuantidade() {
 		return quantidade;
 	}
-
 
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
 
-
 	public Boolean getQtdRecebida() {
 		return qtdRecebida;
 	}
 
-
-	public void setQtdRecebida(Boolean qtdAtingida) {
-		this.qtdRecebida = qtdAtingida;
-	}
-
-
-	public String getId() {
-		return _id;
+	public void setQtdRecebida(Boolean qtdRecebida) {
+		this.qtdRecebida = qtdRecebida;
 	}
 
 	public String getCategoria() {
@@ -81,7 +70,34 @@ public class Gift {
 	public void setNomeConvidado(String nomeConvidado) {
 		this.nomeConvidado = nomeConvidado;
 	}
-	
-	
-	
+
+	public String get_id() {
+		return _id;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((_id == null) ? 0 : _id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Gift other = (Gift) obj;
+		if (_id == null) {
+			if (other._id != null)
+				return false;
+		} else if (!_id.equals(other._id))
+			return false;
+		return true;
+	}	
+		
 }
