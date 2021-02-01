@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "listaPresentes.app.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'listaPresentes.app.jwtExpirationMs'"
+  },
+  {
+    "name": "listaPresentes.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'listaPresentes.app.jwtSecret'"
+  }
+]}
